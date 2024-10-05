@@ -26,7 +26,7 @@ class contaBancaria {
             return;
         }
         this._saldo -= valor;
-        console.log(`Valor atual R$ ${valor.toFixed(2)}.`);
+        console.log(`Valor atual R$ ${this._saldo.toFixed(2)}.`);
             return;
        }
 
@@ -37,5 +37,5 @@ let minhaConta = new contaBancaria("Sttefany", 3000);
 minhaConta.verSaldo();
 minhaConta.depositar(500);
 minhaConta.verSaldo();
-minhaConta.sacar(400);
+minhaConta.sacar(10);
 
